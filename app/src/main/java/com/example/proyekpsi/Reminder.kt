@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "reminderTable")
 class Reminder
     (
-    @ColumnInfo(name = "title")val noteTitle: String,
+    @ColumnInfo(name = "title")val reminderTitle: String,
     @ColumnInfo(name="description")val reminderDescription: String,
     @ColumnInfo(name = "alarmTime")val reminderAlarm: String
     ) {

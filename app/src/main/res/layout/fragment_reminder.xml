@@ -8,6 +8,23 @@
     android:background="@color/colorAccent"
     tools:context=".MainActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvReminder"
+        android:background="@color/colorAccent"
+        tools:listitem="@layout/reminder_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/add_icon"
+        app:tint="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>
