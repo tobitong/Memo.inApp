@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.proyekpsi.Reminder
+import com.example.proyekpsi.entities.Reminder
 import com.example.proyekpsi.database.ReminderDatabase
 import com.example.proyekpsi.repository.ReminderRepository
 import kotlinx.coroutines.Dispatchers
@@ -17,7 +17,7 @@ class ReminderViewModel(application: Application): AndroidViewModel(application)
     init {
         val dao = ReminderDatabase.getDatabase(application).getReminderDao()
         repository = ReminderRepository(dao)
-        allReminder = repository.allNotes
+        allReminder = repository.allReminders
     }
 
     fun deleteReminder(reminder: Reminder) = viewModelScope.launch(Dispatchers.IO) {

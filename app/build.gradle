@@ -65,4 +65,13 @@ dependencies {
     implementation "androidx.room:room-paging:2.4.0-beta02"
 
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
+    //circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //scalable unit text size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //coroutines core
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
 }

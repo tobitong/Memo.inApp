@@ -2,7 +2,7 @@ package com.example.proyekpsi.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.proyekpsi.Reminder
+import com.example.proyekpsi.entities.Reminder
 
 @Dao
 interface ReminderDao {

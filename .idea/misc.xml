@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/drawable/background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/drawable/background_second.xml" value="0.2755208333333333" />
         <entry key="..\:/Projects/ProyekPSI/app/src/main/res/drawable/custom_button_back.xml" value="0.15" />
-        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/activity_add_edit_reminder.xml" value="0.2" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/drawable/search_icon.xml" value="0.2755208333333333" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/drawable/title_background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/activity_add_edit_reminder.xml" value="0.264" />
         <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/fragment_create_note.xml" value="0.264" />
         <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/fragment_notes.xml" value="0.2453125" />
-        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/fragment_reminder.xml" value="0.24728260869565216" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/fragment_reminder.xml" value="0.264" />
+        <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/pop_time.xml" value="0.264" />
         <entry key="..\:/Projects/ProyekPSI/app/src/main/res/layout/reminder_item.xml" value="0.264" />
         <entry key="..\:/Projects/ProyekPSI/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2453125" />
       </map>

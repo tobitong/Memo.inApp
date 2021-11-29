@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -17,14 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:layout_toLeftOf="@+id/deleteButton"
+            android:layout_toLeftOf="@+id/tvReminderAlarm"
             android:padding="4dp"
             android:text="Reminder Title"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/tvReminderAlarm"
+            android:id="@+id/tvReminderDateTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvReminderTitle"
@@ -32,22 +33,34 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="4dp"
-            android:layout_toLeftOf="@+id/deleteButton"
+            android:layout_toLeftOf="@+id/tvReminderAlarm"
+            android:padding="4dp"
+            android:text="Date Time"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvReminderAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@+id/reminderSwitch"
+            android:layout_centerVertical="true"
             android:padding="4dp"
             android:text="Alarm Time"
             android:textColor="@color/white" />
 
-        <ImageView
-            android:id="@+id/deleteButton"
+        <Switch
+            android:id="@+id/reminderSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_margin="5dp"
-            android:padding="4dp"
-            android:src="@drawable/delete_icon"
-            app:tint="@color/white" />
+            android:padding="4dp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

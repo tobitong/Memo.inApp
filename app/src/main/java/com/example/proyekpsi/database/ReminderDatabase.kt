@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.proyekpsi.Reminder
+import com.example.proyekpsi.entities.Reminder
 import com.example.proyekpsi.dao.ReminderDao
 
 @Database(entities = arrayOf(Reminder::class), version = 1, exportSchema = false)

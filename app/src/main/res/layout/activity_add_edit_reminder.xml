@@ -1,47 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/colorAccent"-->
+<!--    tools:context=".activity.AddEditReminderActivity">-->
+
+<!--    <TimePicker-->
+<!--        android:id="@+id/tpReminder"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:headerBackground="@color/colorPrimary"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etReminderTitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_below="@+id/tpReminder"-->
+<!--        android:hint="Reminder Title"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textColorHint="@color/grey" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvTimeShow"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/etReminderTitle"-->
+<!--        android:text="Text View"-->
+<!--        android:layout_toLeftOf="@+id/btnSetTime"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:textSize="30dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSetTime"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Set Time"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_below="@+id/etReminderTitle"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/l1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnCancel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/custom_button_back"-->
+<!--            android:text="Button"-->
+<!--            android:textAllCaps="false" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnAddUpdate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/custom_button_back"-->
+<!--            android:text="Button"-->
+<!--            android:textAllCaps="false" />-->
+
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".AddEditReminderActivity">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.AddEditReminderActivity">
 
+    <!--edit text for note title-->
     <EditText
-        android:id="@+id/etReminderTitle"
+        android:id="@+id/idEdtNoteName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Reminder Title"
+        android:hint="Enter Note Title"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
+    <!--edit text for note description-->
     <EditText
-        android:id="@+id/etReminderDescription"
+        android:id="@+id/idEdtNoteDesc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/etReminderTitle"
-        android:layout_above="@+id/btnAddUpdate"
+        android:layout_above="@id/idBtn"
+        android:layout_below="@id/idEdtNoteName"
         android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
         android:gravity="start|top"
-        android:hint="Description"
+        android:hint="Enter your Note Details"
         android:inputType="textMultiLine"
         android:singleLine="false"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
+    <!--button for saving and updating a note-->
     <Button
-        android:id="@+id/btnAddUpdate"
+        android:id="@+id/idBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button_back"
         android:text="Button"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
